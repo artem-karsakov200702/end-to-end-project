@@ -1,0 +1,101 @@
+{
+  "dataset_identity": {
+    "source": "Open-Meteo",
+    "variant": "variant_05",
+    "granularity": "daily",
+    "period_start": "2026-03-10",
+    "period_end": "2026-06-17",
+    "rows": 310
+  },
+  "schema_hint": "Одна строка mart = одни сутки наблюдений по выбранному городу.",
+  "metrics": [
+    {
+      "name": "temp_mean_c",
+      "min": 10.86,
+      "max": 28.71,
+      "mean": 23.22,
+      "last": 19.89,
+      "prev": 19.89,
+      "delta_last_vs_prev": 0.0
+    },
+    {
+      "name": "temp_max_c",
+      "min": 11.9,
+      "max": 36.0,
+      "mean": 28.22,
+      "last": 23.2,
+      "prev": 23.2,
+      "delta_last_vs_prev": 0.0
+    },
+    {
+      "name": "temp_min_c",
+      "min": 9.9,
+      "max": 22.8,
+      "mean": 18.86,
+      "last": 16.5,
+      "prev": 16.5,
+      "delta_last_vs_prev": 0.0
+    },
+    {
+      "name": "humidity_mean_pct",
+      "min": 45.83,
+      "max": 89.67,
+      "mean": 63.25,
+      "last": 77.08,
+      "prev": 77.08,
+      "delta_last_vs_prev": 0.0
+    },
+    {
+      "name": "precip_sum_mm",
+      "min": 0.0,
+      "max": 14.5,
+      "mean": 1.44,
+      "last": 0.0,
+      "prev": 0.0,
+      "delta_last_vs_prev": 0.0
+    },
+    {
+      "name": "wind_max_kmh",
+      "min": 8.9,
+      "max": 32.0,
+      "mean": 21.46,
+      "last": 22.7,
+      "prev": 22.7,
+      "delta_last_vs_prev": 0.0
+    },
+    {
+      "name": "rainy_hours_count",
+      "min": 0.0,
+      "max": 24.0,
+      "mean": 3.69,
+      "last": 0.0,
+      "prev": 0.0,
+      "delta_last_vs_prev": 0.0
+    },
+    {
+      "name": "temp_7d_avg",
+      "min": 16.09,
+      "max": 28.7,
+      "mean": 25.61,
+      "last": 24.12,
+      "prev": 24.12,
+      "delta_last_vs_prev": 0.0
+    },
+    {
+      "name": "precip_7d_sum",
+      "min": 0.0,
+      "max": 31.6,
+      "mean": 4.0,
+      "last": 8.03,
+      "prev": 8.03,
+      "delta_last_vs_prev": 0.0
+    }
+  ],
+  "anomalies_top3_temperature_mean": [],
+  "constraints": [
+    "Do not invent numbers.",
+    "Use only the numbers provided in 'metrics' and 'anomalies_top3_temperature_mean'.",
+    "If a value is missing, explicitly say it is not available.",
+    "Do not perform arithmetic that is not already in the context."
+  ]
+}

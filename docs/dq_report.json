@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-09T23:11:43.306774",
+  "checks": [
+    {
+      "name": "schema_columns_match_contract",
+      "status": "FAIL",
+      "reason": "Есть отсутствующие колонки из Data Contract",
+      "details": {
+        "missing_columns": [
+          "temp_7d_avg_c",
+          "precip_7d_sum_mm",
+          "created_at_utc"
+        ],
+        "extra_columns": [
+          "temp_7d_avg",
+          "precip_7d_sum"
+        ],
+        "actual_column_count": 12,
+        "expected_column_count": 13
+      }
+    },
+    {
+      "name": "mart_non_empty",
+      "status": "PASS",
+      "reason": "Таблица не пустая",
+      "details": {
+        "rows": 7
+      }
+    },
+    {
+      "name": "no_nulls_in_business_key",
+      "status": "PASS",
+      "reason": "Нет NULL в business key",
+      "details": {
+        "null_count": 0
+      }
+    },
+    {
+      "name": "unique_business_key",
+      "status": "PASS",
+      "reason": "Business key уникален",
+      "details": {
+        "duplicate_count": 0
+      }
+    },
+    {
+      "name": "temp_mean_range",
+      "status": "PASS",
+      "reason": "Температура в допустимом диапазоне",
+      "details": {
+        "out_of_range_count": 0,
+        "min_allowed": -60,
+        "max_allowed": 60
+      }
+    },
+    {
+      "name": "precip_non_negative",
+      "status": "PASS",
+      "reason": "Осадки неотрицательны",
+      "details": {
+        "negative_count": 0
+      }
+    }
+  ]
+}
