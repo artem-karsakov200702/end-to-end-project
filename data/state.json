@@ -1,0 +1,7 @@
+{
+  "variant_id": "05",
+  "source_type": "open-meteo",
+  "last_watermark": "2026-06-15",
+  "last_run_at": "2026-06-10 01:01:08",
+  "last_status": "error"
+}
